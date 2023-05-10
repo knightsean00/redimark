@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "manifest_version": 3,
     "background": {
-        "service_worker": "background.js"
+        "service_worker": "js/background.js"
     },
     "permissions": [
         "tabs",
@@ -13,15 +13,15 @@
     "omnibox": {
         "keyword": "redi"
     },
-    // "icons": { 
-    //     "16": "icons/on16.png",
-    //     "32": "icons/on32.png",
-    //     "48": "icons/on48.png",
-    //     "128": "icons/on128.png" 
-    // },
+    "icons": { 
+        "16": "icons/active16.png",
+        "32": "icons/active32.png",
+        "48": "icons/active48.png",
+        "128": "icons/active128.png" 
+    },
     "action": {
         "default_title": "Click to create a new redirect!",
         "default_popup": "popup.html"
     },
-    "description": "Redi"
+    "description": "Make a quick bookmark redirect using Redimark!"
 }

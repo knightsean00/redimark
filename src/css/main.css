@@ -1,0 +1,113 @@
+@font-face {
+    font-family: "Karla";
+    src: url("Karla-VariableFont_wght.ttf");
+}
+
+body {
+    font-family: "Karla";
+}
+
+h1 {
+    font-weight: 750;
+    color: black;
+}
+
+a {
+    color:#837fd7;
+    transition: color .35s ease-in-out;
+}
+a:hover {
+    color: #413e86;
+}
+
+form {
+    margin: 3em;
+    margin-top: 1em;
+}
+
+.width-300 {
+    width: 300px;
+}
+
+.formLabel {
+    font-size: 1.5em;
+}
+
+.textInput {
+    margin-top: .5em;
+    /* margin-bottom: 1.25em; */
+    
+    padding: .75em;
+    width: 100%;
+
+    border: 1px solid rgb(129, 129, 129);
+    border-radius: 4px;
+
+    transition: border-color .35s ease-in-out;
+    transition: background-color .35s ease-in-out;
+}
+
+.buttonInput {
+    padding: .75em;
+    padding-left: 1em;
+    padding-right: 1em;
+    color: #6C67CA;
+    border: 1px solid #6C67CA;
+    transition: color .35s ease-in-out;
+    transition: background-color .35s ease-in-out;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+.buttonInput:focus {
+    outline: none;
+}
+
+.buttonInput:hover, buttonInput:focus {
+    color: white;
+    background-color: #6C67CA;
+}
+
+.textInput:focus {
+    border-color: #6C67CA;
+    outline:none;
+    background-color: rgb(234, 233, 254);
+}
+
+.textInput:hover {
+    border-color: rgb(75, 71, 146);
+
+}
+
+.invalid {
+    border-color: rgb(235, 96, 96);
+}
+
+.error-text {
+    color: rgb(235, 96, 96);
+    margin-block-start: .25em;
+}
+
+.full {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+#redirects > li {
+    font-size: 1.25em;
+    cursor: pointer;
+}
+
+#redirects > li:hover {
+    text-decoration: line-through;
+    user-select: none;
+}

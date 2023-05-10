@@ -2,16 +2,25 @@
 <html>
     <head>
         <title>Redimark</title>
-        <link rel="stylesheet" href="popup.css">
+        <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
-        <form id="redirectCreationForm" autocomplete="off">
+        <div class="full text-center">
+            <h1 style="margin-block-end: 0px">Redimark</h1>
+            <p style="margin-block-start: 0px"><a href="redirects.html">View all redirects</a></p>
+        </div>
+        <form id="redirectCreationForm" class="width-300" autocomplete="off">
             <label class="formLabel">Key</label>
             <input autocomplete="off" type="text" id="key" name="Key" class="textInput"/>
+            <p class="error-text invisible" id="keyHelperText">Please enter a valid key.</p>
+
             <label class="formLabel">URL</label>
             <input autocomplete="off" type="text" id="url" name="URL" class="textInput"/>
-            <button type="button" id="submit" class="buttonInput">Submit</button>
+            <p class="error-text invisible" id="urlHelperText">Please enter a valid URL.</p>
+            <div style="text-align: center">
+                <button type="button" id="submit" class="buttonInput">Submit</button>
+            </div>
         </form>
-        <script src="popup.js"></script>
+        <script src="js/popup.js"></script>
     </body>
 </html>
